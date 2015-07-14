@@ -1,0 +1,11 @@
+<% provide(:title, 'Hotels') %>
+<h1>Kenya hotels in the trial db</h1>
+<div class="cointainer">
+	<div class = "jumbotron">
+		<%  @hotel.each do |t| %>
+      <table class="table">
+        <td><%= t.name %></td>
+      </table>
+      <% end %>
+	</div>
+</div>
